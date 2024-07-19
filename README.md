@@ -9,7 +9,7 @@
 ### Ceo & Founder
 ### LiebePa-K Transport
 
-We Sofely Tell You that so not use this for personal use 
+We Sofely Tell You that do not use this for personal use 
 
 
 ## If we find that this can be used for personal use, it must be illegal under the Copyright Law of India 2000 (Section 43 of the Information Technology Act, 2000). This project is not allowed to be changed in any way because it may contain copyright offenses. Instead, it is for Bussiness purposes.
