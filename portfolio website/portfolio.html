@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* Add styles for the contact form */
+        .contact-form {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .contact-form.active {
+            display: block;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    <div class="hero">
+        <div class="nav">
+            <div class="logo">
+                <h2>Khush Diyora</h2>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a href="#" class="active">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="img/main.png" alt="men" class="men">
+            <div class="main-detail">
+                <p>Hello, I'm</p>
+                <h1>Khush Diyora</h1>
+                <h4>Frontend Developer</h4>
+
+                <div class="btn">
+                    <button type="button" onclick="downloadCV()">Download CV</button>
+                    <button type="button" class="btn-2" onclick="showContactForm()">Hire Me</button>
+                </div>
+
+                <div class="social">
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-instagram'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="hideContactForm()"></div>
+    <div class="contact-form" id="contactForm">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+        <button type="button" onclick="hideContactForm()">Close</button>
+    </div>
+
+    <script>
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'img/your_cv.pdf'; // Ensure this path matches your directory structure
+            link.download = 'Khush_Diyora_CV.pdf';
+            link.click();
+        }
+
+        function showContactForm() {
+            document.getElementById('contactForm').classList.add('active');
+            document.getElementById('overlay').classList.add('active');
+        }
+
+        function hideContactForm() {
+            document.getElementById('contactForm').classList.remove('active');
+            document.getElementById('overlay').classList.remove('active');
+        }
+    </script>
+</body>
+
+</html>
