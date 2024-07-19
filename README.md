@@ -5,12 +5,12 @@
 
 
 ### Abd Al-Uzza
-![testimonials-3](https://github.com/user-attachments/assets/8cd474d2-d523-4554-aea0-8654346a86a5)
 ### Ceo & Founder
 ### LiebePa-K Transport
 
-We Sofely Tell You that do not use this for personal use 
+### Please refrain from using material for personal use, we sofely tell you. 
 
+#### This is a code that I use for my educational purposes, and it cannot be changed by anyone else without Abd Al-Uzza's permission. If you would like to use it for education, please contact me via the email address listed below with your details and the intended use. If Abd Al-Uzza grants permission, the code will only be used for education purposes by the specific person who has obtained permission from Abd Al-Uzza.
 
 ## If we find that this can be used for personal use, it must be illegal under the Copyright Law of India 2000 (Section 43 of the Information Technology Act, 2000). This project is not allowed to be changed in any way because it may contain copyright offenses. Instead, it is for Bussiness purposes.
 
